@@ -11,19 +11,6 @@ My Program is a simple Reservation Manager for a small boat harbor.
             database="final_reservations_db"
 
 
-Then run the 
+  Then execute the database creation file. Then the last thing you need to do is enter the password you created for your database at the top of the finalgui.py file with the rest of the database specs. 
 
-
-The four tables in the database are reservations, customers,
-boats and slips. I used Tkinter to make a menu page that allows the user to navigate to
-separate windows for four different functions. The four functions are Search Customer, Search
-Boat, Create Customer, and Create Boat. Reservations can be made on a customer's page. I
-did not include a function to create slips because regular harbor staff would never do that. That
-would happen when the harbor is built and the software is installed. By searching by boat or
-customer you can navigate to a customer page that allows you to edit customer information, see
-the boats and reservations attached to that customer, and create new reservations. To create a
-new reservation you enter the length of the boat that you need and the search function will
-return a list of slips that meet the length requirement. When you select a slip it will automatically
-be entered in the slip number field that is used to create a reservation. This is the main problem
-that needed solving. Now to find a viable slip you just need to enter in the length and select a
-slip.
+  When you execute the python file the tkinter gui will automatically open. From there you will want to create a few customers and boats. The only preloaded data is three slips numbered 2, 3, and 4. Any customers, boats, and reservations you make will be automatically commited to the database. You will want to keep track of the customers unique id's when you are going to create a boat it will prompt you to enter that in so that the boat and owner are linked.
