@@ -46,3 +46,11 @@ CREATE TABLE IF NOT EXISTS reservations (
     FOREIGN KEY (boat_id) REFERENCES boats(boat_id),
     FOREIGN KEY (slip_number) REFERENCES slips(slip_number)
 );
+
+
+
+INSERT INTO slips (slip_number, availability,length)
+VALUES
+(2, TRUE, 20),
+(3, TRUE, 40),
+(4, TRUE, 50);
